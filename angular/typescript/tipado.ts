@@ -38,3 +38,25 @@ let stat2: Estado2 = Estado2.Online;
 console.log(stat2);
 console.log(stat);
 
+// Variáveis do tipo desconhecido
+
+let semTipo: unknown = 'Oi';
+semTipo = 32;
+semTipo = true;
+
+// Atribuições
+
+let novaCadeia: string = 'Isto é uma cadeia';
+
+// novaCadeia = semTipo; Não pode atribuir uma variável do tipo desconhecido a uma já tipada
+
+// Com o tipo any é possível realizar essa atribuição
+
+let tipoIndefinido: any = 'Isto é uma mensagem';
+novaCadeia = tipoIndefinido;
+
+// Tipo void
+
+function logger(): void{
+    console.log('Logger');
+}
