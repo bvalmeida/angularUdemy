@@ -25,3 +25,7 @@ mostrarCarro({
     modelo: 'HB20',
     cor: 'Azul',
 });
+let ponto1 = { x: 121, y: 84 };
+const minhaBusca = (v, b) => {
+    return true;
+};

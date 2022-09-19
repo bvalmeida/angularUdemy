@@ -47,3 +47,23 @@ mostrarCarro({
     modelo: 'HB20',
     cor: 'Azul',
 });
+
+// Propriedas de somente leitura
+
+interface Pontos{
+    readonly x: number;
+    readonly y: number;
+}
+
+let ponto1: Pontos = { x: 121, y: 84 };
+// p1.x = 45; -> não é permitido nenhuma modificação, somente leitura
+
+// Definindo uma function dentro de uma interface
+
+interface BuscarData{
+    (valor: string, buscar: string): boolean;
+}
+
+const minhaBusca: BuscarData = (v: string, b:string): boolean => {
+    return true;
+}
