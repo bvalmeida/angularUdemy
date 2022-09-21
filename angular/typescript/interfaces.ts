@@ -65,5 +65,30 @@ interface BuscarData{
 }
 
 const minhaBusca: BuscarData = (v: string, b:string): boolean => {
-    return true;
+    const result = v.search(b);
+    return result > -1;
+}
+
+console.log(minhaBusca('hola', 'ola'));
+
+interface Humano{
+    nome: string;
+    idade: number;
+}
+
+class Adulto implements Humano{
+    nome: string;
+    idade: number;
+    cor: boolean;
+
+    constructor(aNome: string, aIdade: number, aCor: boolean){
+        this.nome = aNome;
+        this.idade = aIdade;
+        this.cor = aCor;
+    }
+}
+
+class Crianca implements Humano{
+    nome: string;
+    idade: number;
 }

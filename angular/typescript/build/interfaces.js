@@ -27,5 +27,7 @@ mostrarCarro({
 });
 let ponto1 = { x: 121, y: 84 };
 const minhaBusca = (v, b) => {
-    return true;
+    const result = v.search(b);
+    return result > -1;
 };
+console.log(minhaBusca('hola', 'ola'));
