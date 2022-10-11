@@ -31,3 +31,12 @@ const minhaBusca = (v, b) => {
     return result > -1;
 };
 console.log(minhaBusca('hola', 'ola'));
+class Adulto {
+    constructor(aNome, aIdade, aCor) {
+        this.nome = aNome;
+        this.idade = aIdade;
+        this.cor = aCor;
+    }
+}
+class Crianca {
+}
