@@ -97,8 +97,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": false
+=======
+>>>>>>> 2ac1cfe6e2d48fbbc3e59e8af6552e1deb6aae34
   }
 }
