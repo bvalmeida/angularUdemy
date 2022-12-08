@@ -3,22 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SaudacoesComponent } from './saudacoes/saudacoes.component';
-<<<<<<< HEAD
 import { PaiComponent } from './pai/pai.component';
 import { FilhoComponent } from './filho/filho.component';
-=======
->>>>>>> 2ac1cfe6e2d48fbbc3e59e8af6552e1deb6aae34
+import { Filho1Component } from './filho1/filho1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     SaudacoesComponent,
     PaiComponent,
-    FilhoComponent
-=======
-    SaudacoesComponent
->>>>>>> 2ac1cfe6e2d48fbbc3e59e8af6552e1deb6aae34
+    FilhoComponent,
+    SaudacoesComponent,
+    Filho1Component
   ],
   imports: [
     BrowserModule
