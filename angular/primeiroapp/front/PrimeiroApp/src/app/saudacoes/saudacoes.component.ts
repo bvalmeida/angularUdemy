@@ -12,10 +12,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaudacoesComponent implements OnInit {
 
-  constructor() { }
+  mensagem: string;
+
+  constructor() { 
+    this.mensagem = 'Uma saudação a todos!';
+
+    setTimeout(() => {
+      this.mensagem = 'Outra saudação para ninguem!';
+    }, 5000);
+  }
 
   ngOnInit(): void {
   }
 
   bemvindo: string = 'Olá Mundo!';
+
+  mostrarSaudacao(): string{
+    return 'Saudações do Método';
+  }
 }
