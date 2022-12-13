@@ -13,9 +13,12 @@ import { Component, OnInit } from '@angular/core';
 export class SaudacoesComponent implements OnInit {
 
   mensagem: string;
+  identificadorParagrafo: string;
 
   constructor() { 
     this.mensagem = 'Uma saudação a todos!';
+
+    this.identificadorParagrafo = 'paragradoPrincipal';
 
     setTimeout(() => {
       this.mensagem = 'Outra saudação para ninguem!';

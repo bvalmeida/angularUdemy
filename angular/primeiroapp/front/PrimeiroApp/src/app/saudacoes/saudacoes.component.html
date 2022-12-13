@@ -1,9 +1,16 @@
-<div>
-    <h1 class="olaMundo">{{bemvindo}}</h1>
+<div class="olaMundo">
+    <div>
+        <h1>{{bemvindo}}</h1>
+    </div>
+    <div>
+        <h1>{{mensagem}}</h1>
+    </div>
+    <div>
+        <h1>O método devolve: "{{mostrarSaudacao()}}"</h1>
+    </div>
 </div>
+
 <div>
-    <h1 class="olaMundo">{{mensagem}}</h1>
-</div>
-<div>
-    <h1 class="olaMundo">O método devolve: "{{mostrarSaudacao()}}"</h1>
+    <p id="prefixo-{{identificadorParagrafo}}-sufixo">Parágrafo para modificações de atributos</p>
+    <p [id]="identificadorParagrafo">Outro Parágrafo</p>
 </div>
