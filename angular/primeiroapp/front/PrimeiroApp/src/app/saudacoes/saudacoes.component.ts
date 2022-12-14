@@ -14,14 +14,17 @@ export class SaudacoesComponent implements OnInit {
 
   mensagem: string;
   identificadorParagrafo: string;
+  identificadorInput: string;
 
   constructor() { 
     this.mensagem = 'Uma saudação a todos!';
-
     this.identificadorParagrafo = 'paragradoPrincipal';
+    this.identificadorInput = 'text';
 
     setTimeout(() => {
       this.mensagem = 'Outra saudação para ninguem!';
+      this.identificadorParagrafo = 'main';
+      this.identificadorInput = 'password';
     }, 5000);
   }
 
