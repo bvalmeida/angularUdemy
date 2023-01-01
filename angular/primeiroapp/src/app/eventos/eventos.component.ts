@@ -12,9 +12,14 @@ export class EventosComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onClick(){
+  onClick($event){
     alert('Botão apertado!!!');
     console.log('Botão apertado!');
+    console.log($event)
+  }
+
+  onChange($event){
+    console.log($event.target.value);
   }
 
 }

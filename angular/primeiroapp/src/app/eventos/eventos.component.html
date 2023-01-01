@@ -1,4 +1,11 @@
 <div>
-    <button (click)="onClick()">Aperte!!</button>
+    <button (click)="onClick($event)">Aperte!!</button>
     <h5>EVENTOS</h5>
+</div>
+<div>
+    <select (change)="onChange($event)">
+        <option value="um">Um</option>
+        <option value="dois">Dois</option>
+        <option value="tres">Três</option>
+    </select>
 </div>
