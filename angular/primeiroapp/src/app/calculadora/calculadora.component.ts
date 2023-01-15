@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CalculadoraComponent implements OnInit {
 
   resultado: string;
+  calculoTerminado: boolean;
 
   constructor() {
     this.resultado = '';
+    this.calculoTerminado = false;
   }
 
   ngOnInit(): void {
@@ -18,12 +20,18 @@ export class CalculadoraComponent implements OnInit {
 
   onClick($event){
     //console.log($event.target.innerText);
-    this.resultado += $event.target.innerText;
-    console.log(this.resultado);
+    if(this.calculoTerminado){
+      this.resultado = $event.target.innerText;
+      this.calculoTerminado = false;
+    }else{
+      this.resultado += $event.target.innerText;
+      console.log(this.resultado);
+    }
   }
 
   onResultado(){
-    
+    this.resultado = eval(this.resultado);
+    this.calculoTerminado = true;
   }
 
   onClickZerar(){
