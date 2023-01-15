@@ -14,3 +14,7 @@
 <div class="quadrado" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseOut()">
     {{mensagem}}
 </div>
+
+<div>
+  <input type="text" (change)="onChangeInput($event)" (input)="onInput($event)" (focus)="onFocus()" (blur)="onBlur()">
+</div>
