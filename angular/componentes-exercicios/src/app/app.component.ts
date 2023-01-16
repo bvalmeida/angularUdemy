@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'componentes-exercicios';
+
+  numeros: number[];
+
+  constructor() {
+    this.numeros = [1, 43, 8, 27];
+  }
 }
