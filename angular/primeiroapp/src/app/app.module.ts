@@ -8,6 +8,7 @@ import { FilhoComponent } from './filho/filho.component';
 import { Filho1Component } from './filho1/filho1.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { AlertaComponent } from './alerta/alerta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
     SaudacoesComponent,
     Filho1Component,
     EventosComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule
