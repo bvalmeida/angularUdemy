@@ -13,4 +13,8 @@ export class AppComponent {
   constructor() {
     this.numeros = [1, 43, 8, 27];
   }
+
+  onTerminaCronometro($event: any){
+    console.log($event);
+  }
 }

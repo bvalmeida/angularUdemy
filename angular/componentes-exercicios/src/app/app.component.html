@@ -1,4 +1,8 @@
-<app-somar [num1]="numeros[0]" [num2]="numeros[1]"></app-somar>
+<!-- <app-somar [num1]="numeros[0]" [num2]="numeros[1]"></app-somar>
 <app-somar [num1]="numeros[2]" [num2]="numeros[3]"></app-somar>
 <app-somar [num1]="45" [num2]="12"></app-somar>
-<app-somar [num1]="143" [num2]="1235"></app-somar>
+<app-somar [num1]="143" [num2]="1235"></app-somar> -->
+<app-cronometro [inicio]="numeros[0]" (terminarCronometro)="onTerminaCronometro($event)"></app-cronometro>
+<app-cronometro [inicio]="numeros[1]" (terminarCronometro)="onTerminaCronometro($event)"></app-cronometro>
+<app-cronometro [inicio]="numeros[2]" (terminarCronometro)="onTerminaCronometro($event)"></app-cronometro>
+<app-cronometro [inicio]="numeros[3]" (terminarCronometro)="onTerminaCronometro($event)"></app-cronometro>
