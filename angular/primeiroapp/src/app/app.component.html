@@ -2,3 +2,18 @@
 <app-alerta [texto]="titulos[1]" subTitulo="Este é o segundo"></app-alerta>
 <app-alerta [texto]="titulos[2]" subTitulo="Este é o terceiro" (alertaApertado)="onAlertaApertado($event)"cd ></app-alerta>
 
+<input type="text" [(ngModel)]="campoTexto">
+<p>{{campoTexto}}</p>
+<p>
+  <button (click)="onClick()">Pegar Valor variavel</button>
+</p>
+
+<div>
+  <input type="text" [(ngModel)]="pessoa.nome"><br>
+  <input type="text" [(ngModel)]="pessoa.apelido"><br>
+  <input type="text" [(ngModel)]="pessoa.idade"><br>
+</div>
+
+<div>
+  <p>{{pessoa.nome}} {{pessoa.apelido}} {{pessoa.idade}} anos</p>
+</div>

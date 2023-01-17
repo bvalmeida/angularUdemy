@@ -9,6 +9,7 @@ import { Filho1Component } from './filho1/filho1.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { AlertaComponent } from './alerta/alerta.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AlertaComponent } from './alerta/alerta.component';
     AlertaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
