@@ -14,4 +14,8 @@ export class AppComponent {
   }
 
   title = 'PrimeiroApp';
+
+  onAlertaApertado($event){
+    console.log($event);
+  }
 }

@@ -1,4 +1,4 @@
-<app-alerta [texto]="titulos[0]" subTitulo="Este é o primeiro"></app-alerta>
+<app-alerta [texto]="titulos[0]" subTitulo="Este é o primeiro" (alertaApertado)="onAlertaApertado($event)"></app-alerta>
 <app-alerta [texto]="titulos[1]" subTitulo="Este é o segundo"></app-alerta>
-<app-alerta [texto]="titulos[2]" subTitulo="Este é o terceiro"></app-alerta>
+<app-alerta [texto]="titulos[2]" subTitulo="Este é o terceiro" (alertaApertado)="onAlertaApertado($event)"></app-alerta>
 
