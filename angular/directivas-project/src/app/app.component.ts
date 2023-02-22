@@ -30,4 +30,8 @@ export class AppComponent {
     }
   }
 
+  onChangeRange($event:any){
+    this.propriedadesParagrafos.fontSize = `${$event.target.value}px`;
+  }
+
 }

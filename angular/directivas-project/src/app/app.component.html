@@ -1,3 +1,5 @@
+<app-semaforo></app-semaforo>
+
 <p [ngStyle]="propriedadesParagrafos">
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque saepe dolor amet voluptatum perspiciatis, incidunt sed ad veritatis, similique nulla libero delectus corporis, reiciendis vitae accusamus eum tempore a fuga.
 </p>
@@ -10,6 +12,10 @@
 
 <div>
   <input type="text" [(ngModel)]="propriedadesParagrafos.color">
+</div>
+
+<div>
+  <input type="range" min="12" max="200" step="2" (change)="onChangeRange($event)">
 </div>
 
 
