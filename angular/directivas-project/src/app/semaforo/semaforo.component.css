@@ -1,10 +1,21 @@
 .semaforo{
   width: 300px;
   height: 300px;
-  border-radius: 50%;
   background-color: blue;
+}
+
+.redondo{
+  border-radius: 50%;
 }
 
 .roxo{
   background-color: red;
+}
+
+.verde{
+  background-color: green;
+}
+
+.amarelo{
+  background-color: yellow;
 }
